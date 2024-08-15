@@ -6,7 +6,7 @@ img_alt: Cats in cyber programming spaces.
 description: |
 tags:
   - Let
-  - Dev
+  - Var
   - Const
 ---
 
