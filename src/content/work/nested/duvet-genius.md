@@ -1,8 +1,8 @@
 ---
 title: Variables
 publishDate: 2020-03-04 00:00:00
-img: /assets/Gift.jpeg
-img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
+img: /assets/CatProgrammer.jpg
+img_alt: Cats in cyber programming spaces.
 description: |
 tags:
   - Let
@@ -15,6 +15,8 @@ tags:
 
 ## Co to jest zmienna?
 
+
+![Gift.jpeg](../../../assets/Gift.jpeg)
 
 
 Zmienna jest to miejsce do przechowywania danych. Możemy używać zmiennych do przechowywania dóbr, odwiedzających i innych danych.
@@ -329,7 +331,7 @@ Teraz zmiennych powinny być jasne i łatwe do zrozumienia, aby od razu było wi
 
 ### Teraz już wiesz wszytko o zmiennych. 
 
-# "It's a piece of cake for you." 
+## "It's a piece of cake for you!" 
 
 
 ![FinishMem.jpg](../../../assets/FinishMem.jpg)
