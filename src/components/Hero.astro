@@ -10,7 +10,7 @@ const { align = 'center', tagline, title } = Astro.props;
 
 <div class:list={['hero stack gap-4', align]}>
 	<div class="stack gap-2">
-		<h1 class="title">{title}</h1>
+		<h1 class="title cyber-fonts">{title}</h1>
 		{tagline && <p class="tagline">{tagline}</p>}
 	</div>
 	<slot />
@@ -50,5 +50,18 @@ const { align = 'center', tagline, title } = Astro.props;
 		.title {
 			font-size: var(--text-5xl);
 		}
+
+		@font-face {
+			font-family: Cyber;
+			src: url(/font/cyber-fonts.ttf);
+		}
+
+		.cyber-fonts {
+			font-family: Cyber;
+			font-size: xxx-large;
+
+		}
 	}
 </style>
+
+

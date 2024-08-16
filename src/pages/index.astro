@@ -16,8 +16,8 @@ import PortfolioPreview from '../components/PortfolioPreview.astro';
 import ContactCTA from '../components/ContactCTA.astro';
 import Skills from '../components/Skills.astro';
 
-// Content Fetching: List four most recent work projects
-const projects = (await getCollection('work'))
+// Content Fetching: List four most recent blog posts
+const articles = (await getCollection('blog'))
 	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
 	.slice(0, 4);
 
@@ -31,7 +31,7 @@ const projects = (await getCollection('work'))
 			<header class="hero">
 				<Hero
 					title="Hello, my name is Natalia Kuchta"
-					tagline="I am a Creative Software Developer."
+					tagline="Your friendly code sorceress, ready to debug the matrix and sprinkle a little magic on your tech troubles!” 💻🧙‍♀️✨"
 					align="start"
 				>
 					<div class="roles">
@@ -42,7 +42,7 @@ const projects = (await getCollection('work'))
 				</Hero>
 
 				<img
-					alt="Natalia Kuchta is smiling"
+					alt="Natalia is smiling"
 					width="480"
 					height="620"
 					src="/assets/portrait.jpg"
@@ -55,16 +55,16 @@ const projects = (await getCollection('work'))
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected my Article</h3>
+					<h3>Selected my Articles</h3>
 					<p></p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="offset">
 						{
-							projects.map((project) => (
+							articles.map((article) => (
 								<li>
-									<PortfolioPreview project={project} />
+									<PortfolioPreview project={article} />
 								</li>
 							))
 						}
@@ -72,7 +72,7 @@ const projects = (await getCollection('work'))
 				</div>
 
 				<div class="cta">
-					<CallToAction href="/work/">
+					<CallToAction href="/blog/">
 						View All
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
@@ -90,7 +90,7 @@ const projects = (await getCollection('work'))
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							['JavaScript', 'TypeScript', 'Vue', 'Tailwind', 'Git'].map((brand) => (
+							['JavaScript', 'TypeScript', 'Vue', 'Tailwind', 'Git','Docker'].map((brand) => (
 								<li class="mention-card">
 									<p>{brand}</p>
 								</li>
