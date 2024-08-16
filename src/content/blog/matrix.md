@@ -2,7 +2,7 @@
 title: MatriX
 publishDate: 2019-12-01 00:00:00
 img: /assets/MatrixPink2.gif
-img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
+img_alt: Pink Matrix gif
 description: | 
   
 tags:
@@ -13,7 +13,7 @@ tags:
 
 
 
-## The Tutorial to Creatingma Matrix Effectwith TypeScript and Vite
+## The Tutorial to Creating Matrix Effect with TypeScript and Vite
 
 ![Unicorn.jpg](../../assets/Unicorn.jpg)
 
