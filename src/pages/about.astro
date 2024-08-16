@@ -6,104 +6,184 @@ import Hero from '../components/Hero.astro';
 ---
 
 <BaseLayout title="About | Natalia Kuchta" description="About Natalia Kuchta">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="I love travels and programming"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my experiences."
-			>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Rust in the sea"
-				/>
-			</Hero>
+    <div class="stack gap-20">
+        <main class="wrapper about">
+            <Hero
+                    title="I love travels and programming"
+                    tagline="Dive with me into the world of programming and traveling, discovering fascinating corners of the digital universe and adventurous paths of coding. "
+            >
 
-			<section>
-				<h2 class="section-title">Experiences</h2>
-				<div class="content">
-					<p>
-						Traveling with programming is like bringing your own superhero cape—no matter where you go,
-						you've got the power to debug your way out of any situation. Wi-Fi might be the final boss,
-						but with enough coffee and code, you can conquer anything from a beachfront bungalow to a mountain cabin.
-						Just remember, if your code works on vacation, it’s basically a souvenir!
-					</p>
 
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>Master</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>Frontend development</p>
-				</div>
-			</section>
-		</main>
 
-		<ContactCTA />
-	</div>
+                <img src="/assets/walkingOnPlanets.gif" alt="planet"
+                     class="object-cover w-full h-96">
+
+            </Hero>
+
+            <section>
+
+
+                <div class="content">
+                    <article class="prose lg:prose-xl dark:text-slate-200 bold 	font-style: normal">
+                        <p> Traveling with programming is like bringing your own superhero cape—no matter where you go,
+                            you've got the power to debug your way out of any situation. Wi-Fi might be the final boss,
+                            but with enough coffee and code, you can conquer anything from a beachfront bungalow to a
+                            mountain cabin.
+                            Just remember, if your code works on vacation, it’s basically a souvenir!</p>
+
+                        <p>I’m crashing the scene like the world’s one big “cyberpunk” matrix, where every line of code
+                            is a new hack in my mission. Here’s how my journey through the global “darknet” full of code
+                            and compilers looks, as seen by a true “haxor”:</p>
+
+
+                        <p> Dubai – My laptop’s now “hot” like a “server farm” in the middle of the desert. Debugging in
+                            this heat? My computer has more “overheat warnings” than code. The only “ping” is “ERROR:
+                            OVERHEATING” with a lightning bolt beside it.
+
+
+                        <p> Thailand – Pad Thai? More like “pad bugs.” Between “syntax errors” and “spicy exceptions,”
+                            I’m trying to fix my code, not just the spices. Where’s my “debugging sauce”?</p>
+
+
+                        <p> Bali – Surfing and coding is my new “dual-booting.” I’m trying to “surf” with my laptop, but
+                            instead of “high scores,” I’m getting “high fails.” My skills are at “FAIL whale” beta
+                            version.
+                        <p>
+
+
+                        <p> Vietnam – “Ping” in a maze of streets? My GPS is more confused than my recursive function.
+                            Vietnamese “pho” has more “local variables” than my code, and I’m still searching for a
+                            “syntax fix.”</p>
+
+
+                        <p> Georgia – Debugging with wine in hand? It’s like “code reviews” in “relax mode.” Khachapuri
+                            + wine = “optimal configuration” for every “deploy script.”</p>
+
+
+                        <p> Malaysia – Jungle full of “tropical exceptions.” I’m discovering that the “secret sambal
+                            recipe” is the real “key to cracking the code.” “Code cracking” in the tropics is the new
+                            standard.</p>
+
+
+                        <p> Venice – Coding on a gondola? “Avoiding canal errors” is like “handling edge cases” in
+                            “extreme” mode. Avoiding “crashes” and “canal falls” is my new hobby.
+                        <p>
+
+
+                        <p> Paris – Coding under the Eiffel Tower is like “coding with croissant.” Every line is like a
+                            “high-performance pastry” with “bootstrap” on top. Debugging in the city of love? Now it’s
+                            “code chic.”
+                        <p>
+
+
+                        <p> Malta – The view of the blue waters is like a “remote server” with “optimal latency.” The
+                            sea breeze? Probably adding a “code refresh” to every “deployment.”
+                        <p>
+
+
+                        <p> Cyprus – Integrating Cypriot lemons and honey with code is like “sweet algorithmic fusion.”
+                            “Sweet algorithms” are now “production ready” with a “Cypriot boost.”</p>
+
+
+                        <p> Bulgaria – Coding in stone houses is like “legacy system debugging” in “historical mode.”
+                            Hard errors vs. soft dumplings – now I know how to “code balance” in the “stone age.”</p>
+
+
+                        <p> Albania – Exploring the nooks of this country is like “unknown vulnerabilities” in my code.
+                            I’m discovering that local adventures are as “unexpected” as new “security exploits.”</p>
+
+
+                        <p>
+                            In summary, every “deploy” and “commit” is like a new “phase” in my “cyber-adventure,” with
+                            each location as a “new patch” in my “global coding project.” Looking forward to more
+                            “hacks” and “exploits” in this “open source” journey!
+                        </p>
+
+                        <span>Keep hacking, stay encrypted! 🖥️💣</span>
+
+
+                        <img src="/assets/pinkwaves.gif" alt="pink-waves">
+                    </article>
+                </div>
+
+
+
+            </section>
+            <section>
+                <h2 class=" section-title"></h2>
+                <div class="content">
+                    <p></p>
+                </div>
+            </section>
+            <section>
+                <h2 class="section-title"></h2>
+                <div class="content">
+                    <p></p>
+                </div>
+            </section>
+        </main>
+
+        <ContactCTA/>
+    </div>
 </BaseLayout>
 
 <style>
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
+    .about {
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+    }
 
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
+    img {
+        margin-top: 1.5rem;
+        border-radius: 1.5rem;
+        box-shadow: var(--shadow-md);
+    }
 
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-200);
-	}
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        color: var(--gray-200);
+    }
 
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
+    .section-title {
+        grid-column-start: 1;
+        font-size: var(--text-xl);
+        color: var(--gray-0);
+    }
 
-	.content {
-		grid-column: 2 / 4;
-	}
+    .content {
+        grid-column: 2 / 4;
+        font-size: large;
 
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
 
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
+    }
 
-	@media (min-width: 50em) {
-		.about {
-			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
-		}
+    .content :global(a) {
+        text-decoration: 1px solid underline transparent;
+        text-underline-offset: 0.25em;
+        transition: text-decoration-color var(--theme-transition);
+    }
 
-		.about > :global(:first-child) {
-			grid-column-start: 2;
-		}
+    .content :global(a:hover),
+    .content :global(a:focus) {
+        text-decoration-color: currentColor;
+    }
 
-		section {
-			display: contents;
-			font-size: var(--text-lg);
-		}
-	}
+    @media (min-width: 50em) {
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 60% 1fr;
+        }
+
+        .about > :global(:first-child) {
+            grid-column-start: 2;
+        }
+
+        section {
+            display: contents;
+            font-size: var(--text-lg);
+        }
+    }
 </style>
