@@ -15,7 +15,7 @@ tags:
 
 ## The Tutorial to Creating Matrix Effect with TypeScript and Vite
 
-![Unicorn.jpg](../../assets/Unicorn.jpg)
+![unicorn](../../assets/Unicorn.jpg)
 
 ### Introduction
 
@@ -28,30 +28,24 @@ Before we start coding, we need to set up our project. Open your terminal and fo
 
 1. **Create a new Vite project**:
 
-    ```bash
-    bashCopy code
-    npm create vite@latest matrix-ts-vite -- --template vanilla-ts
-    cd matrix-ts-vite
-    
-    ```
+```bash
+npm create vite@latest matrix-ts-vite -- --template vanilla-ts
+cd matrix-ts-vite
+```
 
 2. **Install dependencies** (if needed):
 
-    ```bash
-    bashCopy code
-    npm install
-    
-    ```
+```bash
+npm install
+```
 
 3. **Start the development server**:
 
-    ```bash
-    bashCopy code
-    npm run dev
-    
-    ```
+```bash
+npm run dev
+```
 
-   Now you have the basic structure ready, and the development server is running. We’re ready to “bend” some code!
+Now you have the basic structure ready, and the development server is running. We’re ready to “bend” some code!
 
 
 ### HTML Structure
@@ -59,7 +53,6 @@ Before we start coding, we need to set up our project. Open your terminal and fo
 Let’s start with the HTML file. We’ll keep it simple:
 
 ```html
-htmlCopy code
 <!doctype html>
 <html lang="en">
   <head>
@@ -72,7 +65,6 @@ htmlCopy code
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
-
 ```
 
 No fluff, just the essentials—like a hacker’s lair. The `#app` div is where the magic will happen.
@@ -82,7 +74,6 @@ No fluff, just the essentials—like a hacker’s lair. The `#app` div is where 
 We need to ensure that our canvas is properly styled. Add this code to your `style.css` file:
 
 ```css
-cssCopy code
 * {
   margin: 0;
   padding: 0;
@@ -95,7 +86,6 @@ body {
 canvas {
   display: block;
 }
-
 ```
 
 Black background? Check. Full-screen canvas? Check. Now we’re ready to initiate those iconic green or pink falling characters.
@@ -104,8 +94,7 @@ Black background? Check. Full-screen canvas? Check. Now we’re ready to initiat
 
 Now for the fun part! Open up `main.ts` and replace its contents with the following code:
 
-```tsx
-typescriptCopy code
+```typescript
 import './style.css'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -166,8 +155,8 @@ function draw() {
     }
 }
 setInterval(draw, 33);
-
 ```
+
 ![myMatrix.jpg](../../assets/myMatrix.jpg)
 
 ![GreenMatrix.png](../../assets/GreenMatrix.png)
