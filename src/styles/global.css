@@ -253,3 +253,9 @@ h5 {
 		gap: 12rem;
 	}
 }
+
+
+/* change image of unicorn in matrix blog post */
+img[alt=unicorn] { width: 50%; margin: auto }
+
+img[alt=hole] {  width: 75%; margin: auto }

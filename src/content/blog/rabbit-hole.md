@@ -48,7 +48,7 @@ Finally, let’s talk about the heavyweights of window management: **I3** and **
 - **I3** is like the most "organized" version of your desk. It’s functional, efficient, and sleek. It’s the ideal choice if you like to have everything under control and don’t want your windows dancing across the screen like in a celebrity dance-off.
 - **BSPWM**, on the other hand, is the "wilder" cousin of I3. It offers even greater freedom and flexibility in window management, making you feel like a master of organization who has just earned the title of the best architect of virtual space.
 
-![Hole.gif](../../assets/Hole.gif)
+![hole](../../assets/Hole.gif)
 
 ### **The World Beyond**
 
@@ -58,4 +58,4 @@ So, take your favorite graphic environment, dive into the rabbit hole, explore U
 
 ### Attention! You might not escape the rabbit hole like Alice in Wonderland. Are you willing to risk it? Jump in…
 
-![RabbitHole.jpg](../../assets/RabbitHole.jpg)
+![rabbit-hole](../../assets/RabbitHole.jpg)

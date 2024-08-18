@@ -31,8 +31,8 @@ const { Content } = await entry.render();
 	<div class="stack gap-20">
 		<div class="stack gap-15">
 			<header>
-				<div class="wrapper stack gap-2">
-					<a class="back-link" href="/work/"><Icon icon="arrow-left" /> Work</a>
+				<div class="wrapper gap-2">
+					<a class="back-link" href="/blog/"><Icon icon="arrow-left" /> Blog</a>
 					<Hero title={entry.data.title} align="start">
 						<div class="details">
 							<div class="tags">
@@ -44,9 +44,9 @@ const { Content } = await entry.render();
 				</div>
 			</header>
 			<main class="wrapper">
-				<div class="stack gap-10 content">
-					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
-					<div class="content">
+				<div class="gap-10 m-auto">
+					{entry.data.img && <img class="m-auto" src={entry.data.img} alt={entry.data.img_alt || ''} />}
+					<div class="prose lg:prose-xl dark:text-slate-200 dark:prose-invert m-auto" style="font-family: var(--font-body);">
 						<Content />
 					</div>
 				</div>
@@ -83,11 +83,6 @@ const { Content } = await entry.render();
 	.description {
 		font-size: var(--text-lg);
 		max-width: 54ch;
-	}
-
-	.content {
-		max-width: 65ch;
-		margin-inline: auto;
 	}
 
 	.content > :global(* + *) {
