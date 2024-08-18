@@ -1,24 +1,6 @@
-# Astro Starter Kit: Portfolio
+- 👋 Hi, I’m @natalia-kuchta
+- 👀 I’m interested in fronted development.
+- 🌱 I’m currently learning java script.
+- 💞️ I’m looking for my first job in IT.
+- 📫 Reach me by email n.kuchta@onet.pl
 
-```sh
-npm create astro@latest -- --template portfolio
-```
-
-
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
