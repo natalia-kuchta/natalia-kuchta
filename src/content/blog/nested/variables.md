@@ -10,214 +10,213 @@ tags:
   - Const
 ---
 
-# Zastosowanie zmiennych
 
-
-## Co to jest zmienna?
+# Using Variables
 
 
 ![Gift.jpeg](../../../assets/Gift.jpeg)
 
+### What is a Variable?
 
-Zmienna jest to miejsce do przechowywania danych. Możemy używać zmiennych do przechowywania dóbr, odwiedzających i innych danych.
+A variable is a "place" to store data. We can use variables to store goods, visitors, and other types of data.
 
-Aby stworzyć zmienną w JavaScript trzeba użyć słowa kluczowego jakim jest `let`.
+To create a variable in JavaScript, you need to use the keyword `let`.
 
-Poniższa instrukcja tworzy (innymi słowy: deklaruje) zmienną o nazwie „label”:
+The following statement creates (or declares) a variable named "label":
 
 ```js
 let label;
 ```
 
-Teraz możemy umieścić w niej dane, używając operatora przypisania `=`:
+Now we can store data in it using the assignment operator `=`:
 
 ```js
 let label;
-label = 'Surprise!'; // przechowuje ciąg znaków 'Surprise!' w zmiennej o nazwie label
+label = 'Surprise!'; // stores the string 'Surprise!' in the variable named label
 ```
 
-Ciąg znaków jest teraz zapisany w obszarze pamięci skojarzonym ze zmienną. Możemy go użyć, odwołując się do nazwy zmiennej:
+The string is now stored in the memory associated with the variable. We can use it by referencing the variable's name:
 
 ```js
 let label;
 label = 'Surprise!';
 
-alert(label); // pokazuje zawartość zmiennej
+alert(label); // shows the content of the variable
 ```
 
-Dla jasności możemy połączyć deklarację zmiennej i przypisanie jej w jednej linii:
+For clarity, we can combine the variable declaration and assignment in a single line:
 
 ```js
-let label = 'Surprise!'; // definiuje zmienną i przypisuje wartość
+let label = 'Surprise!'; // defines a variable and assigns a value
 
 alert(label); // Surprise!
 ```
 
-Możemy również zadeklarować wiele zmiennych w jednej linii:
+We can also declare multiple variables in one line:
 
 ```js
 let user = 'Mary', age = 25, message = 'Hello';
 ```
 
-Może się to wydawać krótsze, ale nie zaleca się tego sposobu. Dla lepszej czytelności używaj jednej linii na zmienną.
+This might seem shorter, but it's not recommended. For better readability, use one line per variable.
 
-Sposób drugi jest trochę dłuższy, ale łatwiejszy do odczytania:
+The second method is slightly longer but easier to read:
 
 ```js
-let user = 'John';
+let user = 'Mary';
 let age = 25;
 let message = 'Hello';
 ```
 
-W starszych skryptach możesz spotkać inne słowo kluczowe: `var` zamiast `let`:
+In older scripts, you might encounter another keyword: `var` instead of `let`:
 
 ```js
 var label = 'Surprise';
 ```
 
-Słowo kluczowe `var` działa prawie tak samo jak `let`. Również służy do deklarowania zmiennych, ale robi to w nieco inny, „stary” sposób.
+The `var` keyword works almost the same as `let`. It also declares variables but does so in a slightly different, "old" way.
 
-Istnieją subtelne różnice między `let` a `var`. 
-
+There are subtle differences between `let` and `var`.
 
 ![MyMemAboutConst.png](../../../assets/MyMemAboutConst.png)
 
-## Nazywanie zmiennych
+### Naming Variables
 
-W JavaScript są dwie zasady dotyczące tworzenia nazw zmiennych:
+In JavaScript, there are two rules for creating variable names:
 
-1. Nazwa może składać się jedynie z liter, cyfr oraz znaków `$` i `_`.
-2. Nazwa nie może rozpoczynać się cyfrą.
+1. The name can consist only of letters, digits, and the characters `$` and `_`.
+2. The name cannot start with a digit.
 
-Przykłady poprawnych nazw zmiennych:
+Examples of valid variable names:
 
 ```js
 let userName;
 let cat999;
 ```
 
-Jeśli nazwa zmiennej zawiera kilka słów, zazwyczaj używa się konwencji camelCase. Oznacza to, że kolejne słowa po pierwszym zaczynają się wielką literą, na przykład `myVeryLongName`.
+If a variable name consists of several words, the camelCase convention is usually used. This means that the subsequent words after the first one start with a capital letter, for example, `myVeryLongName`.
 
-Dodatkowo, symbole `$` i `_` są dozwolone w nazwach zmiennych, traktowane są jak zwykłe litery bez specjalnego znaczenia.
+Additionally, the symbols `$` and `_` are allowed in variable names and are treated as ordinary letters with no special meaning.
 
-Przykłady poprawnych nazw zmiennych:
-
-```js
-let $ = 9; // zmienna o nazwie "$"
-let _ = 1; // zmienna o nazwie "_"
-
-alert($ + _); // wynik: 10
-```
-
-Przykłady błędnych nazw zmiennych:
+Examples of valid variable names:
 
 ```js
-let 9a; // nazwa nie może zaczynać się od cyfry
-let my-cat; // znak '-' nie jest dozwolony w nazwach zmiennych
+let $ = 9; // variable named "$"
+let _ = 1; // variable named "_"
+
+alert($ + _); // result: 10
 ```
 
-Warto zauważyć, że JavaScript rozróżnia wielkość liter, więc zmienne o nazwach `apple` i `APPLE` to dwie różne zmienne.
+Examples of invalid variable names:
 
-## Analogia z życia codziennego zmiennej
+```js
+let 9a; // name cannot start with a digit
+let my-cat; // the '-' character is not allowed in variable names
+```
 
-Możemy łatwo zrozumieć pojęcie „zmiennej”, jeśli wyobrazimy sobie ją jako „prezent” na dane, z unikalną etykietą na prezecie.
+It's important to note that JavaScript is case-sensitive, so variables named `apple` and `APPLE` are two different variables.
 
-Na przykład zmienną z etykietą można wyobrazić sobie jako prezent oznaczoną “etykietę “ z zawartością o nazwie „niespodzianka” w środku:
+### Everyday Analogy of a Variable
 
-Możemy włożyć dowolną wartość do prezentu.
+We can easily understand the concept of a "variable" by imagining it as a "gift" for data, with a unique label on it.
 
-Możemy również zmieniać ją tyle razy, ile chcemy:
+For example, a variable with a name label can be imagined as a gift marked with a "label" with the value "Surprise" inside:
+
+We can place any value inside the gift.
+
+We can also change it as many times as we want:
 
 ```js
 let label;
 
 label = 'Surprise';
 
-label = 'cat'; // wartość zmieniona
+label = 'doll'; // value changed
 
 alert(label);
 ```
 
-Gdy wartość zostanie zmieniona, stare dane są usuwane ze zmiennej:
+When the value is changed, the old data is removed from the variable.
 
-Możemy również zadeklarować dwie zmienne i skopiować dane z jednej do drugiej.
+We can also declare two variables and copy data from one to the other.
 
 ```js
-let surprise = 'Surprise cat';
-let cat;
+let surprise = 'Surprise doll';
+let doll;
 
-// skopiuj 'Surprise cat' z surprise do cat
+// copy 'Surprise doll' from surprise to doll
 doll = surprise;
 
-// teraz dwie zmienne mają te same dane
-alert(surprise); // Surprise cat!
-alert(cat); // Surprise cat!
+// now both variables have the same data
+alert(surprise); // Surprise doll!
+alert(doll); // Surprise doll!
 ```
+
 ![BoxLabel.png](../../../assets/BoxLabel.png)
 
 
 ![CatInBox.png](../../../assets/CatInBox.png)
 
-## Podwójne deklarowanie wywołuje błąd
+
+## Double Declaration Causes an Error!
 
 ![CatMem.jpg](../../../assets/CatMem.jpg)
 
-Zmienna powinna być zadeklarowana tylko raz.
+A variable should only be declared once.
 
-Powtórna deklaracja tej samej zmiennej to błąd:
+Declaring the same variable again causes an error:
 
 ```js
 let label = "This";
 
-// powtórzenie 'let' prowadzi do błędu
+// repeating 'let' causes an error
 let label = "That"; // SyntaxError: 'label' has already been declared
 ```
 
-Zatem powinniśmy deklarować zmienną raz, a następnie odnosić się do niej bez `let`.
+So, we should declare a variable once and then refer to it without using `let`.
 
-W takich językach, raz zapisana wartość „w prezencie”, pozostaje tam na zawsze. Jeśli potrzebujemy przechować coś innego, język zmusza nas do utworzenia nowego pudełka (zadeklarowania nowej zmiennej). Nie możemy ponownie użyć starego.
+In some languages, once a value is stored in the “gift,” it stays there forever. If we need to store something else, the language forces us to create a new box (declare a new variable). We cannot reuse the old one.
 
-## Nazwy zastrzeżone
+## **Reserved Names**
 
-Istnieje lista zastrzeżonych słów, które nie mogą być używane jako nazwy zmiennych, ponieważ są one używane przez sam język.
+There is a list of reserved words that cannot be used as variable names because they are used by the language itself.
 
-Na przykład: `let`, `class`, `return` i `function` są zastrzeżone.
+For example: `let`, `class`, `return`, and `function` are reserved.
 
-Kod poniżej wywołuje błąd składni:
+The code below triggers a syntax error:
 
 ```js
-let let = 8; // nie można nazwać zmiennej "let", błąd!
-let return = 8; // także nie można nazwać jej "return", błąd!
+let let = 8; // cannot name a variable "let", error!
+let return = 8; // cannot name it "return" either, error!
 ```
 
-## Const
+## **Const**
 
 <video width="100%" height="500" controls>
   <source src="/assets/PartyITAwesome.mp4" type="video/mp4">
 </video>
 
-
-Aby zadeklarować zmienną stałą  używamy `const` zamiast `let`:
-
-```js
-const myAwesomeParty = '17.08.2024';
-```
-
-Zmienna zadeklarowana przy użyciu `const` nazywana jest "stałą" i nie może zostać ponownie przypisana. Próba zmiany wartości spowoduje błąd:
+To declare a constant variable, we use `const` instead of `let`:
 
 ```js
-const myAwesomeParty = '17.08.2024';
-
-myAwesomeParty = '07.06.2027'; // błąd, nie można przypisać nowej wartości do stałej!
+const myAwesomeParty = '08/17/2024';
 ```
 
-Gdy programista jest pewien, że wartość zmiennej nie zmieni się, może zadeklarować ją jako stałą, używając `const`, aby zagwarantować i przekazać tę informację innym.
+A variable declared with `const` is called a "constant" and cannot be reassigned. Attempting to change the value will result in an error:
 
-## Stałe zapisane wielkimi literami
+```js
+const myAwesomeParty = '08/17/2024';
 
-Popularnym zwyczajem jest używanie stałych jako aliasów dla trudnych do zapamiętania wartości znanych przed wykonaniem programu. Takie stałe zapisuje się wielkimi literami i podkreśleniami.
+myAwesomeParty = '06/07/2027'; // error, cannot reassign a new value to a constant!
+```
 
-Na przykład możemy zdefiniować stałe dla różnych etapów przygotowania imprezy:
+When a developer is sure that a variable’s value will not change, they can declare it as a constant using `const` to ensure and communicate this to others.
+
+## **Constants in Uppercase**
+
+A common practice is to use constants as aliases for hard-to-remember values known before the program runs. Such constants are written in uppercase with underscores.
+
+For example, we can define constants for different stages of party preparation:
 
 ```js
 const STEP_INVITATIONS_SENT = "Invitations Sent";
@@ -225,74 +224,71 @@ const STEP_DECORATIONS_DONE = "Decorations Done";
 const STEP_CATERING_ORDERED = "Catering Ordered";
 const STEP_MUSIC_SETUP = "Music Setup Complete";
 
-// ...kiedy monitorujemy postęp przygotowań
+// ...when tracking the preparation progress
 let currentStep = STEP_DECORATIONS_DONE;
 console.log(currentStep); // Decorations Done
 ```
 
-Korzyści:
+Benefits:
 
-- `STEP_DECORATIONS_DONE` jest bardziej zrozumiałe niż ręczne wpisywanie opisu w kodzie.
-- `STEP_DECORATIONS_DONE` zmniejsza ryzyko błędów w porównaniu do użycia zwykłego tekstu.
-- `STEP_DECORATIONS_DONE` jest bardziej znaczące, co ułatwia czytanie i zrozumienie kodu.
+- `STEP_DECORATIONS_DONE` is more understandable than manually typing the description in the code.
+- `STEP_DECORATIONS_DONE` reduces the risk of errors compared to using plain text.
+- `STEP_DECORATIONS_DONE` is more meaningful, making the code easier to read and understand.
 
-Jeśli chodzi o nazewnictwo stałych, warto wiedzieć, kiedy używać wielkich liter, a kiedy nadawać im zwykłe nazwy.
+When it comes to naming constants, it's important to know when to use uppercase and when to give them regular names.
 
-Stała oznacza, że wartość zmiennej pozostaje niezmienna. Niektóre stałe są ustalone z góry, na przykład etapy przygotowania imprezy, podczas gdy inne mogą być ustalane w trakcie, ale nie zmieniają się po przypisaniu.
+A constant means the variable’s value remains unchanged. Some constants are predefined, such as the stages of party preparation, while others may be determined during execution but remain unchanged after assignment.
 
-Na przykład:
-
-```js
-const guestsArrivedAt = new Date(); // czas, kiedy goście przybyli
-```
-
-Wartość `guestsArrivedAt` jest ustalana dopiero w trakcie trwania imprezy, więc jej nazwa używa małych liter. Jednak nadal jest to stała, ponieważ po ustaleniu czasu, nie ulega ona zmianie.
-
-Stałe zapisane wielkimi literami stosuje się zazwyczaj do wartości, które są znane i ustalone wcześniej, jak etapy przygotowań do imprezy.
-
-## Nadawanie dobrych nazw
-
-Nadawanie odpowiednich nazw zmiennym jest kluczowe, zwłaszcza podczas planowania imprezy. Nazwa zmiennej powinna jasno i precyzyjnie odzwierciedlać to, jakie dane przechowuje. Umiejętność tworzenia dobrych nazw zmiennych jest jedną z najważniejszych w programowaniu.
-
-Nazwy zmiennych powinny być:
-
-- **Zrozumiałe dla innych**: Na przykład, zamiast używać ogólników, takich jak `a` czy `b`, lepiej użyć nazw, które oddają kontekst, jak `guestList` czy `partyTheme`.
-
-- **Bez skrótów**: Unikaj skracania nazw, takich jak `gL` dla `guestList`, chyba że jest to absolutnie konieczne i wszyscy w zespole rozumieją ten skrót.
-
-- **Maksymalnie opisowe i zwięzłe**: Nazwy takie jak `drinks` lub `decorations` są o wiele lepsze niż niejasne `items` czy `stuff`, ponieważ dokładniej opisują, co jest przechowywane w zmiennej.
-
-- **Spójne**: Jeśli nazwiesz listę gości `guestList`, to inne zmienne związane z gośćmi powinny mieć podobne nazwy, takie jak `confirmedGuests` czy `vipGuests`, a nie np. `attendeesList` czy `specialInvitees`. Taka spójność ułatwia zrozumienie kodu.
-
-Przykład złej praktyki:
+For example:
 
 ```js
-let g = ["Alice", "Bob", "Charlie"]; // "g" nie mówi jasno, że to lista gości
-let theme = "Hawaiian"; // lepiej niż "t", ale nadal zbyt ogólne
+const guestsArrivedAt = new Date(); // time when guests arrived
 ```
 
-Przykład dobrej praktyki:
+The value of `guestsArrivedAt` is determined during the party, so its name uses lowercase letters. However, it is still a constant because once the time is set, it does not change.
+
+Constants in uppercase are typically used for values known and fixed in advance, like the stages of party preparation.
+
+## **Choosing Good Names**
+
+Choosing appropriate variable names is crucial, especially when planning a party. A variable's name should clearly and accurately reflect the data it holds. The ability to create good variable names is one of the most important skills in programming.
+
+Variable names should be:
+
+- **Understandable to others**: For example, instead of using generic names like `a` or `b`, it’s better to use names that convey context, like `guestList` or `partyTheme`.
+- **Without abbreviations**: Avoid shortening names like `gL` for `guestList`, unless absolutely necessary and understood by everyone on the team.
+- **As descriptive and concise as possible**: Names like `drinks` or `decorations` are much better than vague names like `items` or `stuff`, as they more accurately describe what is stored in the variable.
+- **Consistent**: If you name a guest list `guestList`, other guest-related variables should have similar names, like `confirmedGuests` or `vipGuests`, not `attendeesList` or `specialInvitees`. This consistency makes the code easier to understand.
+
+Example of bad practice:
 
 ```js
-let guestList = ["Alice", "Bob", "Charlie"]; // jasne i zrozumiałe
-let partyTheme = "Hawaiian"; // od razu wiadomo, że chodzi o temat imprezy
+let g = ["Alice", "Bob", "Charlie"]; // "g" doesn't clearly indicate it's a guest list
+let theme = "Hawaiian"; // better than "t", but still too general
 ```
 
-Poprawne nazewnictwo zmiennych sprawia, że kod jest bardziej czytelny i zrozumiały, zarówno dla ciebie, jak i dla innych, którzy mogą go później przeglądać lub edytować.
+Example of good practice:
 
-## Podsumowanie
+```js
+let guestList = ["Alice", "Bob", "Charlie"]; // clear and understandable
+let partyTheme = "Hawaiian"; // immediately indicates it’s the party theme
+```
 
-Możemy tworzyć zmienne do przechowywania danych, używając słów kluczowych `var`, `let` lub `const`.
+Using proper variable names makes the code more readable and understandable, both for you and for others who might review or edit it later.
 
-- `let` – to nowoczesny sposób na tworzenie zmiennych.
-- `var` – to stara metoda, z którą możemy się spotkać w starszych skryptach.
-- `const` – działa podobnie jak `let`, ale wartość zmiennej nie może być zmieniona po jej ustaleniu.
+## **Summary**
 
-Teraz zmiennych powinny być jasne i łatwe do zrozumienia, aby od razu było wiadomo, co przechowują.
+We can create variables to store data using the keywords `var`, `let`, or `const`.
+
+- `let` – the modern way to create variables.
+- `var` – the old method, found in older scripts.
+- `const` – works like `let`, but the variable's value cannot be changed after it's set.
+
+Now, variables should be clear and easy to understand, so it’s immediately obvious what they store.
 
 ## Finish
 
-### Teraz już wiesz wszytko o zmiennych. 
+### Now you know everything about variables.
 
 ## "It's a piece of cake for you!" 
 
