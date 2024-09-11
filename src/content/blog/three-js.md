@@ -4,16 +4,15 @@ publishDate: 2024-09-11 00:00:00
 img: /assets/cubes.gif
 img_alt: Cube
 description: |
- 
+
 tags:
-  - 3D
-  - Three.js
-  - cube
-  - geometry
-   
+    - 3D
+    - Three.js
+    - cube
+    - geometry
 ---
 
-# Three.js 
+# Three.js
 
 **Odyssey into the Cosmic Geometry**
 
@@ -25,10 +24,9 @@ Hey there, code gang! Ready to dive into the 3D cosmos and feel like you're codi
 
 **Three.js** is a tool that lets you work wonders in the browser. We're talking about 3D graphics, rendered in real-time. Imagine – you’re building planets, spaceships, geometric figures, or maybe even your very own 3D capybara model! You won’t need to fire up Photoshop or Blender – everything happens directly in your code.
 
-###  We have two options to start our cosmic odyssey with Three.js
+### We have two options to start our cosmic odyssey with Three.js
 
 ![rackiet.gif](../../assets/rackiet.gif)
-
 
 ### 1. Three.js via npm
 
@@ -70,16 +68,14 @@ Imagine you're a coding nomad, trekking through the digital wilderness with a ba
 So, dear nomad, you need a map! Import maps are your survival tool. You need to place it in the sacred `<head>` of your `index.html` file. Drop this piece of code right after the styles, because without the map, you’re lost:
 
 ```html
-
-   <script type="importmap">
-     {
-       "imports": {
-         "three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",
-         "three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/"
-       }
-     }
-   </script>
-
+<script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/"
+        }
+    }
+</script>
 ```
 
 Just don’t forget to replace `<version>` with something specific, like “v0.149.0”. You can find the latest version, like a true explorer, on npm!
@@ -105,21 +101,21 @@ Welcome to the next phase of your coding expedition! 🗺️ It’s time to stoc
 This is your digital treasure map, guiding the browser to where your code gold is hidden. Check out what it should look like:
 
 ```html
-
-   <!DOCTYPE html>
-   <html lang="en">
-       <head>
-           <meta charset="utf-8">
-           <title>My first three.js app</title>
-           <style>
-               body { margin: 0; }
-           </style>
-       </head>
-       <body>
-           <script type="module" src="/main.js"></script>
-       </body>
-   </html>
-
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>My first three.js app</title>
+        <style>
+            body {
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>
 ```
 
 **main.js**
@@ -127,9 +123,7 @@ This is your digital treasure map, guiding the browser to where your code gold i
 Here’s where you keep your spells and magical potions. This file holds all the three.js secrets that will bring your page to life. Here’s a snippet:
 
 ```js
-
-    import * as THREE from 'three';
-
+import * as THREE from 'three';
 ```
 
 **public/**
@@ -151,65 +145,61 @@ Your interstellar toolkit is almost ready! 🌌 Since we're all set to dive into
 First rule of the 3D universe: you need a scene. Second rule: without a camera, you see nothing. Third rule: the renderer is the wizard that extracts graphics and beams them to your screen.
 
 ```js
-
-   const scene = new THREE.Scene();
-   const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-   const renderer = new THREE.WebGLRenderer();
-   renderer.setSize(window.innerWidth, window.innerHeight);
-   document.body.appendChild(renderer.domElement);
-
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(
+    75,
+    window.innerWidth / window.innerHeight,
+    0.1,
+    1000,
+);
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
 ```
 
 Told you it’s going to be cosmic! The camera is your eyes, the scene is the space around you, and the renderer is the guy showing you what you’ve created.
 
 1. **Geometric Hit of the Day: The Cube**
 
-   Time to introduce our **star of the evening**—the beautiful, classic, reliable **cube**. Who wouldn’t want a cube of their own in their browser?
+    Time to introduce our **star of the evening**—the beautiful, classic, reliable **cube**. Who wouldn’t want a cube of their own in their browser?
 
- ```js
-    
-    const geometry = new THREE.BoxGeometry(1, 1, 1);
-    const material = new THREE.MeshBasicMaterial({ color: '#fe019a'});
-    const cube = new THREE.Mesh(geometry, material);
-    scene.add(cube);
-    
- ```
+```js
+const geometry = new THREE.BoxGeometry(1, 1, 1);
+const material = new THREE.MeshBasicMaterial({ color: '#fe019a' });
+const cube = new THREE.Mesh(geometry, material);
+scene.add(cube);
+```
 
-   Here’s your pink **cube**. It's pink, just like the glasses through which you see the code. But we’re not stopping here—onward and upward!
+Here’s your pink **cube**. It's pink, just like the glasses through which you see the code. But we’re not stopping here—onward and upward!
 
 2. **Bring the Cube to Life!**
 
-   We know it’s 3D, but why not add a bit of life? Let’s make that cube spin like it’s at a rave party!
+    We know it’s 3D, but why not add a bit of life? Let’s make that cube spin like it’s at a rave party!
 
 ```js
-    
-    function animate(){
-        cube.rotation.x += 0.02;
-        cube.rotation.y += 0.02;
-        renderer.render(scene,camera);
-    }
-    renderer.setAnimationLoop(animate);
+function animate() {
+    cube.rotation.x += 0.02;
+    cube.rotation.y += 0.02;
+    renderer.render(scene, camera);
+}
+renderer.setAnimationLoop(animate);
 ```
 
-   Now our cube is spinning like a DJ at an afterparty. You might want to ask Alexa to play "Stayin' Alive" Bee Gees because this cube just started its dance of a lifetime.
+Now our cube is spinning like a DJ at an afterparty. You might want to ask Alexa to play "Stayin' Alive" Bee Gees because this cube just started its dance of a lifetime.
 
-   
 ![cube-rainbow.gif](../../assets/cube-rainbow.gif)
 
 3. **Don’t Forget the Camera!**
 
-   **Adjust the Camera**
+    **Adjust the Camera**
 
-   The camera needs to be in the perfect spot to capture the whole view.
+    The camera needs to be in the perfect spot to capture the whole view.
 
- ```js
-    
-    camera.position.z = 5;
-    
+```js
+camera.position.z = 5;
 ```
 
-   And there you have it! Your cube is spinning like a celestial marvel. It’s like a galactic Rubik’s Cube, but without the hassle of solving it.
-
+And there you have it! Your cube is spinning like a celestial marvel. It’s like a galactic Rubik’s Cube, but without the hassle of solving it.
 
 ---
 
@@ -218,7 +208,6 @@ Told you it’s going to be cosmic! The camera is your eyes, the scene is the sp
 </video>
 
 ## Awesome!
-
 
 ![cat-wow.gif](../../assets/cat-wow.gif)
 

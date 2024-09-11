@@ -5,19 +5,16 @@ img: /assets/CatProgrammer.jpg
 img_alt: Cats in cyber programming spaces.
 description: |
 tags:
-  - Let
-  - Var
-  - Const
+    - Let
+    - Var
+    - Const
 ---
 
 # Zastosowanie zmiennych
 
-
 ## Co to jest zmienna?
 
-
 ![Gift.jpeg](../../../assets/Gift.jpeg)
-
 
 Zmienna jest to miejsce do przechowywania danych. Możemy używać zmiennych do przechowywania dóbr, odwiedzających i innych danych.
 
@@ -91,8 +88,7 @@ var label = 'Surprise';
 
 Słowo kluczowe `var` działa prawie tak samo jak `let`. Również służy do deklarowania zmiennych, ale robi to w nieco inny, „stary” sposób.
 
-Istnieją subtelne różnice między `let` a `var`. 
-
+Istnieją subtelne różnice między `let` a `var`.
 
 ![MyMemAboutConst.png](../../../assets/MyMemAboutConst.png)
 
@@ -177,8 +173,8 @@ alert(surprise); // Surprise cat!
 alert(cat); // Surprise cat!
 
 ```
-![BoxLabel.png](../../../assets/BoxLabel.png)
 
+![BoxLabel.png](../../../assets/BoxLabel.png)
 
 ![CatInBox.png](../../../assets/CatInBox.png)
 
@@ -224,8 +220,7 @@ let return = 8; // także nie można nazwać jej "return", błąd!
   <source src="/assets/PartyITAwesome.mp4" type="video/mp4">
 </video>
 
-
-Aby zadeklarować zmienną stałą  używamy `const` zamiast `let`:
+Aby zadeklarować zmienną stałą używamy `const` zamiast `let`:
 
 ```jsx
 javascriptCopy code
@@ -266,9 +261,9 @@ console.log(currentStep); // Decorations Done
 
 Korzyści:
 
-- `STEP_DECORATIONS_DONE` jest bardziej zrozumiałe niż ręczne wpisywanie opisu w kodzie.
-- `STEP_DECORATIONS_DONE` zmniejsza ryzyko błędów w porównaniu do użycia zwykłego tekstu.
-- `STEP_DECORATIONS_DONE` jest bardziej znaczące, co ułatwia czytanie i zrozumienie kodu.
+-   `STEP_DECORATIONS_DONE` jest bardziej zrozumiałe niż ręczne wpisywanie opisu w kodzie.
+-   `STEP_DECORATIONS_DONE` zmniejsza ryzyko błędów w porównaniu do użycia zwykłego tekstu.
+-   `STEP_DECORATIONS_DONE` jest bardziej znaczące, co ułatwia czytanie i zrozumienie kodu.
 
 Jeśli chodzi o nazewnictwo stałych, warto wiedzieć, kiedy używać wielkich liter, a kiedy nadawać im zwykłe nazwy.
 
@@ -292,10 +287,10 @@ Nadawanie odpowiednich nazw zmiennym jest kluczowe, zwłaszcza podczas planowani
 
 Nazwy zmiennych powinny być:
 
-- **Zrozumiałe dla innych**: Na przykład, zamiast używać ogólników, takich jak `a` czy `b`, lepiej użyć nazw, które oddają kontekst, jak `guestList` czy `partyTheme`.
-- **Bez skrótów**: Unikaj skracania nazw, takich jak `gL` dla `guestList`, chyba że jest to absolutnie konieczne i wszyscy w zespole rozumieją ten skrót.
-- **Maksymalnie opisowe i zwięzłe**: Nazwy takie jak `drinks` lub `decorations` są o wiele lepsze niż niejasne `items` czy `stuff`, ponieważ dokładniej opisują, co jest przechowywane w zmiennej.
-- **Spójne**: Jeśli nazwiesz listę gości `guestList`, to inne zmienne związane z gośćmi powinny mieć podobne nazwy, takie jak `confirmedGuests` czy `vipGuests`, a nie np. `attendeesList` czy `specialInvitees`. Taka spójność ułatwia zrozumienie kodu.
+-   **Zrozumiałe dla innych**: Na przykład, zamiast używać ogólników, takich jak `a` czy `b`, lepiej użyć nazw, które oddają kontekst, jak `guestList` czy `partyTheme`.
+-   **Bez skrótów**: Unikaj skracania nazw, takich jak `gL` dla `guestList`, chyba że jest to absolutnie konieczne i wszyscy w zespole rozumieją ten skrót.
+-   **Maksymalnie opisowe i zwięzłe**: Nazwy takie jak `drinks` lub `decorations` są o wiele lepsze niż niejasne `items` czy `stuff`, ponieważ dokładniej opisują, co jest przechowywane w zmiennej.
+-   **Spójne**: Jeśli nazwiesz listę gości `guestList`, to inne zmienne związane z gośćmi powinny mieć podobne nazwy, takie jak `confirmedGuests` czy `vipGuests`, a nie np. `attendeesList` czy `specialInvitees`. Taka spójność ułatwia zrozumienie kodu.
 
 Przykład złej praktyki:
 
@@ -321,17 +316,16 @@ Poprawne nazewnictwo zmiennych sprawia, że kod jest bardziej czytelny i zrozumi
 
 Możemy tworzyć zmienne do przechowywania danych, używając słów kluczowych `var`, `let` lub `const`.
 
-- `let` – to nowoczesny sposób na tworzenie zmiennych.
-- `var` – to stara metoda, z którą możemy się spotkać w starszych skryptach.
-- `const` – działa podobnie jak `let`, ale wartość zmiennej nie może być zmieniona po jej ustaleniu.
+-   `let` – to nowoczesny sposób na tworzenie zmiennych.
+-   `var` – to stara metoda, z którą możemy się spotkać w starszych skryptach.
+-   `const` – działa podobnie jak `let`, ale wartość zmiennej nie może być zmieniona po jej ustaleniu.
 
 Teraz zmiennych powinny być jasne i łatwe do zrozumienia, aby od razu było wiadomo, co przechowują.
 
 ## Finish
 
-### Teraz już wiesz wszytko o zmiennych. 
+### Teraz już wiesz wszytko o zmiennych.
 
-## "It's a piece of cake for you!" 
-
+## "It's a piece of cake for you!"
 
 ![FinishMem.jpg](../../../assets/FinishMem.jpg)
