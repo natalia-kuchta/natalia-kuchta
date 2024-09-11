@@ -45,8 +45,8 @@ Now it's time to check out the brave souls who decided to share their epic creat
 
 Finally, let’s talk about the heavyweights of window management: **I3** and **BSPWM**. Both are minimalist window managers that make managing workspace feel like building with LEGO blocks.
 
-- **I3** is like the most "organized" version of your desk. It’s functional, efficient, and sleek. It’s the ideal choice if you like to have everything under control and don’t want your windows dancing across the screen like in a celebrity dance-off.
-- **BSPWM**, on the other hand, is the "wilder" cousin of I3. It offers even greater freedom and flexibility in window management, making you feel like a master of organization who has just earned the title of the best architect of virtual space.
+-   **I3** is like the most "organized" version of your desk. It’s functional, efficient, and sleek. It’s the ideal choice if you like to have everything under control and don’t want your windows dancing across the screen like in a celebrity dance-off.
+-   **BSPWM**, on the other hand, is the "wilder" cousin of I3. It offers even greater freedom and flexibility in window management, making you feel like a master of organization who has just earned the title of the best architect of virtual space.
 
 ![hole](../../assets/Hole.gif)
 

@@ -51,15 +51,15 @@ Let’s start with the HTML file. We’ll keep it simple:
 ```html
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matrix Effect</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Matrix Effect</title>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script type="module" src="/src/main.ts"></script>
+    </body>
 </html>
 ```
 
@@ -91,7 +91,7 @@ Black background? Check. Full-screen canvas? Check. Now we’re ready to initiat
 Now for the fun part! Open up `main.ts` and replace its contents with the following code:
 
 ```typescript
-import './style.css'
+import './style.css';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <canvas></canvas>
@@ -159,11 +159,11 @@ setInterval(draw, 33);
 
 ### What’s Happening Here?
 
-- **Canvas Initialization**: We start by grabbing a reference to the `<canvas>` element and setting its width and height to match the browser window.
-- **Character Generation**: The `getCharactersFromRange` function generates a list of characters from the Unicode range 0x3040 to 0x309F. These are Japanese Hiragana characters, which fit the Matrix theme perfectly.
-- **Drops Array**: This array controls the vertical positions of the characters. Each element in the array represents a column of characters, and its value represents the Y position of the latest character drop.
-- **Random Colors**: To make things more interesting, the `getColor` function generates random colors for the characters.
-- **Drawing Function**: The `draw` function is where the magic happens. It clears a bit of the canvas with a semi-transparent black rectangle, then draws the characters in the next position down the screen. When a drop reaches the bottom, it randomly resets to the top.
+-   **Canvas Initialization**: We start by grabbing a reference to the `<canvas>` element and setting its width and height to match the browser window.
+-   **Character Generation**: The `getCharactersFromRange` function generates a list of characters from the Unicode range 0x3040 to 0x309F. These are Japanese Hiragana characters, which fit the Matrix theme perfectly.
+-   **Drops Array**: This array controls the vertical positions of the characters. Each element in the array represents a column of characters, and its value represents the Y position of the latest character drop.
+-   **Random Colors**: To make things more interesting, the `getColor` function generates random colors for the characters.
+-   **Drawing Function**: The `draw` function is where the magic happens. It clears a bit of the canvas with a semi-transparent black rectangle, then draws the characters in the next position down the screen. When a drop reaches the bottom, it randomly resets to the top.
 
 ### Running the Project
 

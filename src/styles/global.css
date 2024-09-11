@@ -280,8 +280,13 @@ h5 {
     }
 }
 
-
 /* change image of unicorn in matrix blog post */
-img[alt=unicorn] { width: 50%; margin: auto }
+img[alt='unicorn'] {
+    width: 50%;
+    margin: auto;
+}
 
-img[alt=hole] {  width: 75%; margin: auto }
+img[alt='hole'] {
+    width: 75%;
+    margin: auto;
+}

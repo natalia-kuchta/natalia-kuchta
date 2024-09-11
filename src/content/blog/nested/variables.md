@@ -5,14 +5,12 @@ img: /assets/CatProgrammer.jpg
 img_alt: Cats in cyber programming spaces.
 description: |
 tags:
-  - Let
-  - Var
-  - Const
+    - Let
+    - Var
+    - Const
 ---
 
-
 # Using Variables
-
 
 ![Gift.jpeg](../../../assets/Gift.jpeg)
 
@@ -55,7 +53,9 @@ alert(label); // Surprise!
 We can also declare multiple variables in one line:
 
 ```js
-let user = 'Mary', age = 25, message = 'Hello';
+let user = 'Mary',
+    age = 25,
+    message = 'Hello';
 ```
 
 This might seem shorter, but it's not recommended. For better readability, use one line per variable.
@@ -154,9 +154,7 @@ alert(doll); // Surprise doll!
 
 ![BoxLabel.png](../../../assets/BoxLabel.png)
 
-
 ![CatInBox.png](../../../assets/CatInBox.png)
-
 
 ## Double Declaration Causes an Error!
 
@@ -167,10 +165,10 @@ A variable should only be declared once.
 Declaring the same variable again causes an error:
 
 ```js
-let label = "This";
+let label = 'This';
 
 // repeating 'let' causes an error
-let label = "That"; // SyntaxError: 'label' has already been declared
+let label = 'That'; // SyntaxError: 'label' has already been declared
 ```
 
 So, we should declare a variable once and then refer to it without using `let`.
@@ -219,10 +217,10 @@ A common practice is to use constants as aliases for hard-to-remember values kno
 For example, we can define constants for different stages of party preparation:
 
 ```js
-const STEP_INVITATIONS_SENT = "Invitations Sent";
-const STEP_DECORATIONS_DONE = "Decorations Done";
-const STEP_CATERING_ORDERED = "Catering Ordered";
-const STEP_MUSIC_SETUP = "Music Setup Complete";
+const STEP_INVITATIONS_SENT = 'Invitations Sent';
+const STEP_DECORATIONS_DONE = 'Decorations Done';
+const STEP_CATERING_ORDERED = 'Catering Ordered';
+const STEP_MUSIC_SETUP = 'Music Setup Complete';
 
 // ...when tracking the preparation progress
 let currentStep = STEP_DECORATIONS_DONE;
@@ -231,9 +229,9 @@ console.log(currentStep); // Decorations Done
 
 Benefits:
 
-- `STEP_DECORATIONS_DONE` is more understandable than manually typing the description in the code.
-- `STEP_DECORATIONS_DONE` reduces the risk of errors compared to using plain text.
-- `STEP_DECORATIONS_DONE` is more meaningful, making the code easier to read and understand.
+-   `STEP_DECORATIONS_DONE` is more understandable than manually typing the description in the code.
+-   `STEP_DECORATIONS_DONE` reduces the risk of errors compared to using plain text.
+-   `STEP_DECORATIONS_DONE` is more meaningful, making the code easier to read and understand.
 
 When it comes to naming constants, it's important to know when to use uppercase and when to give them regular names.
 
@@ -255,23 +253,23 @@ Choosing appropriate variable names is crucial, especially when planning a party
 
 Variable names should be:
 
-- **Understandable to others**: For example, instead of using generic names like `a` or `b`, it’s better to use names that convey context, like `guestList` or `partyTheme`.
-- **Without abbreviations**: Avoid shortening names like `gL` for `guestList`, unless absolutely necessary and understood by everyone on the team.
-- **As descriptive and concise as possible**: Names like `drinks` or `decorations` are much better than vague names like `items` or `stuff`, as they more accurately describe what is stored in the variable.
-- **Consistent**: If you name a guest list `guestList`, other guest-related variables should have similar names, like `confirmedGuests` or `vipGuests`, not `attendeesList` or `specialInvitees`. This consistency makes the code easier to understand.
+-   **Understandable to others**: For example, instead of using generic names like `a` or `b`, it’s better to use names that convey context, like `guestList` or `partyTheme`.
+-   **Without abbreviations**: Avoid shortening names like `gL` for `guestList`, unless absolutely necessary and understood by everyone on the team.
+-   **As descriptive and concise as possible**: Names like `drinks` or `decorations` are much better than vague names like `items` or `stuff`, as they more accurately describe what is stored in the variable.
+-   **Consistent**: If you name a guest list `guestList`, other guest-related variables should have similar names, like `confirmedGuests` or `vipGuests`, not `attendeesList` or `specialInvitees`. This consistency makes the code easier to understand.
 
 Example of bad practice:
 
 ```js
-let g = ["Alice", "Bob", "Charlie"]; // "g" doesn't clearly indicate it's a guest list
-let theme = "Hawaiian"; // better than "t", but still too general
+let g = ['Alice', 'Bob', 'Charlie']; // "g" doesn't clearly indicate it's a guest list
+let theme = 'Hawaiian'; // better than "t", but still too general
 ```
 
 Example of good practice:
 
 ```js
-let guestList = ["Alice", "Bob", "Charlie"]; // clear and understandable
-let partyTheme = "Hawaiian"; // immediately indicates it’s the party theme
+let guestList = ['Alice', 'Bob', 'Charlie']; // clear and understandable
+let partyTheme = 'Hawaiian'; // immediately indicates it’s the party theme
 ```
 
 Using proper variable names makes the code more readable and understandable, both for you and for others who might review or edit it later.
@@ -280,9 +278,9 @@ Using proper variable names makes the code more readable and understandable, bot
 
 We can create variables to store data using the keywords `var`, `let`, or `const`.
 
-- `let` – the modern way to create variables.
-- `var` – the old method, found in older scripts.
-- `const` – works like `let`, but the variable's value cannot be changed after it's set.
+-   `let` – the modern way to create variables.
+-   `var` – the old method, found in older scripts.
+-   `const` – works like `let`, but the variable's value cannot be changed after it's set.
 
 Now, variables should be clear and easy to understand, so it’s immediately obvious what they store.
 
@@ -290,7 +288,6 @@ Now, variables should be clear and easy to understand, so it’s immediately obv
 
 ### Now you know everything about variables.
 
-## "It's a piece of cake for you!" 
-
+## "It's a piece of cake for you!"
 
 ![FinishMem.jpg](../../../assets/FinishMem.jpg)
