@@ -1,6 +1,6 @@
 ---
 title: Rabbit Hole
-publishDate: 2020-03-02 00:00:00
+publishDate: 2024-08-17 00:00:00
 img: /assets/AliceInHole.gif
 img_alt: Alice in down the rabbit hole
 description: |

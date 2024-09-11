@@ -1,6 +1,6 @@
 ---
 title: MatriX
-publishDate: 2019-12-01 00:00:00
+publishDate: 2024-08-20 00:00:00
 img: /assets/MatrixPink2.gif
 img_alt: Pink Matrix gif
 description: | 
@@ -59,7 +59,7 @@ Before we start coding, we need to set up our project. Open your terminal and fo
 Let’s start with the HTML file. We’ll keep it simple:
 
 ```html
-htmlCopy code
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -82,7 +82,7 @@ No fluff, just the essentials—like a hacker’s lair. The `#app` div is where 
 We need to ensure that our canvas is properly styled. Add this code to your `style.css` file:
 
 ```css
-cssCopy code
+
 * {
   margin: 0;
   padding: 0;
@@ -104,8 +104,8 @@ Black background? Check. Full-screen canvas? Check. Now we’re ready to initiat
 
 Now for the fun part! Open up `main.ts` and replace its contents with the following code:
 
-```tsx
-typescriptCopy code
+```ts
+
 import './style.css'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
