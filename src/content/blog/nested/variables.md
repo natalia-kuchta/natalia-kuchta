@@ -1,6 +1,6 @@
 ---
 title: Variables
-publishDate: 2020-03-04 00:00:00
+publishDate: 2024-08-14 00:00:00
 img: /assets/CatProgrammer.jpg
 img_alt: Cats in cyber programming spaces.
 description: |

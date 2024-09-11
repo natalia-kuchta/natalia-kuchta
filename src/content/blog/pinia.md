@@ -1,6 +1,6 @@
 ---
 title: Pinia
-publishDate: 2019-10-02 00:00:00
+publishDate: 2024-08-15 00:00:00
 img: /assets/Pinia.png
 img_alt: Pinia in cosmic gate and spaceship Vue.
 description: Pinia
