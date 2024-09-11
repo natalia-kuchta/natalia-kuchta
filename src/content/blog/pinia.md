@@ -4,15 +4,12 @@ publishDate: 2024-08-15 00:00:00
 img: /assets/Pinia.png
 img_alt: Pinia in cosmic gate and spaceship Vue.
 description: Pinia
- 
+
 tags:
-  - Frontend
-  - Vue
-  - Pinia
-
+    - Frontend
+    - Vue
+    - Pinia
 ---
-
-
 
 # Pinia – Your New Superhero in the Vue.js Universe
 
@@ -119,15 +116,16 @@ export const useUserStore = defineStore('user', {
 
 ![Pinia2.png](../../assets/Pinia2.png)
 
-- **Simplicity:** With Pinia, everything is like gold – simple and intuitive.
-- **Modularity:** You can have stores like balls – as many as you want.
-- **TypeScript Support:** If you’re a TypeScript fan, Pinia is as friendly as your favorite pillow.
+-   **Simplicity:** With Pinia, everything is like gold – simple and intuitive.
+-   **Modularity:** You can have stores like balls – as many as you want.
+-   **TypeScript Support:** If you’re a TypeScript fan, Pinia is as friendly as your favorite pillow.
 
 ## Conclusion
 
 Pinia is the superhero you need in your Vue.js app. With it, you can manage state like a true wizard. So don’t wait – start using Pinia and make your apps more organized than ever before!
 
 ### May the Force be with you!
+
 <video width="100%" height="500" controls>
   <source src="/assets/Pinia.mp4" type="video/mp4">
 </video>
