@@ -43,18 +43,18 @@ Pinia works like a store where you keep all the important stuff, like user info,
 
 ```js
 // stores/counterStore.js
-import { defineStore } from 'pinia'
+import { defineStore } from 'pinia';
 
 export const useCounterStore = defineStore('counter', {
-  state: () => ({
-    count: 0
-  }),
-  actions: {
-    increment() {
-      this.count++
-    }
-  }
-})
+    state: () => ({
+        count: 0,
+    }),
+    actions: {
+        increment() {
+            this.count++;
+        },
+    },
+});
 ```
 
 See? Now you’ve got your own store with one value – a counter. You can increase it whenever you like!
@@ -65,16 +65,16 @@ Now it’s time for our store to shine. Let’s use it in a Vue component:
 
 ```html
 <template>
-  <div>
-    <p>Current count: {{ counter.count }}</p>
-    <button @click="counter.increment">Increase Count</button>
-  </div>
+    <div>
+        <p>Current count: {{ counter.count }}</p>
+        <button @click="counter.increment">Increase Count</button>
+    </div>
 </template>
 
 <script setup>
-import { useCounterStore } from '@/stores/counterStore'
+    import { useCounterStore } from '@/stores/counterStore';
 
-const counter = useCounterStore()
+    const counter = useCounterStore();
 </script>
 ```
 
@@ -84,22 +84,22 @@ Pinia offers more than just basic operations. You can create stores with asynchr
 
 ```js
 // stores/userStore.js
-import { defineStore } from 'pinia'
+import { defineStore } from 'pinia';
 
 export const useUserStore = defineStore('user', {
-  state: () => ({
-    user: null
-  }),
-  actions: {
-    async fetchUser() {
-      // Simulate fetching data from an API
-      this.user = await fetch('/api/user').then(res => res.json())
-    }
-  },
-  getters: {
-    isLoggedIn: (state) => !!state.user
-  }
-})
+    state: () => ({
+        user: null,
+    }),
+    actions: {
+        async fetchUser() {
+            // Simulate fetching data from an API
+            this.user = await fetch('/api/user').then((res) => res.json());
+        },
+    },
+    getters: {
+        isLoggedIn: (state) => !!state.user,
+    },
+});
 ```
 
 ## Why is Pinia Awesome?
