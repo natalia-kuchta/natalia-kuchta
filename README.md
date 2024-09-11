@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dbf9250c-1c04-4477-ab18-7bbd782729d5/deploy-status)](https://app.netlify.com/sites/natalia-kuchta-blog/deploys)
+
 # Astro Starter Kit: Portfolio
 
 ```sh
