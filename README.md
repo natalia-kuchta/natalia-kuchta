@@ -1,24 +1,8 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/dbf9250c-1c04-4477-ab18-7bbd782729d5/deploy-status)](https://app.netlify.com/sites/natalia-kuchta-blog/deploys)
 
-# Astro Starter Kit: Portfolio
-
-```sh
-npm create astro@latest -- --template portfolio
-```
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- 👋 Hi, I’m @natalia-kuchta
+- 👀 I’m specialised in web development.
+- 🌱 My main language is JavaScript.
+- 💞️ I’m open for new challenges.
+- 📫 Reach me by email n.kuchta@onet.pl
+- 🌏 https://natalia-kuchta-blog.netlify.app

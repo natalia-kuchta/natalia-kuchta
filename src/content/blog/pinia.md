@@ -28,25 +28,20 @@ Pinia https://pinia.vuejs.org/ is a state management library for Vue 3. Think of
 Before we start the fun, we need to install our superhero. In your terminal, type:
 
 ```bash
-bashCopy code
 npm install pinia
-
 ```
 
 Or, if you’re a Yarn fan:
 
 ```bash
-bashCopy code
 yarn add pinia
-
 ```
 
 ## Creating a Pinia Store
 
 Pinia works like a store where you keep all the important stuff, like user info, preferences, and more. Here’s how to create your first store:
 
-```jsx
-javascriptCopy code
+```js
 // stores/counterStore.js
 import { defineStore } from 'pinia'
 
@@ -60,7 +55,6 @@ export const useCounterStore = defineStore('counter', {
     }
   }
 })
-
 ```
 
 See? Now you’ve got your own store with one value – a counter. You can increase it whenever you like!
@@ -69,8 +63,7 @@ See? Now you’ve got your own store with one value – a counter. You can incre
 
 Now it’s time for our store to shine. Let’s use it in a Vue component:
 
-```
-vueCopy code
+```html
 <template>
   <div>
     <p>Current count: {{ counter.count }}</p>
@@ -83,15 +76,13 @@ import { useCounterStore } from '@/stores/counterStore'
 
 const counter = useCounterStore()
 </script>
-
 ```
 
 ## Pinia at Your Fingertips
 
 Pinia offers more than just basic operations. You can create stores with asynchronous actions, use getters, and more. Here’s an example of an advanced store:
 
-```jsx
-javascriptCopy code
+```js
 // stores/userStore.js
 import { defineStore } from 'pinia'
 
@@ -109,7 +100,6 @@ export const useUserStore = defineStore('user', {
     isLoggedIn: (state) => !!state.user
   }
 })
-
 ```
 
 ## Why is Pinia Awesome?
