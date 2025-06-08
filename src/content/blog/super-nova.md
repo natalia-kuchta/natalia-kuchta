@@ -1,15 +1,14 @@
 ---
 title: Super-Nova
 publishDate: 2025-06-08 00:00:00
-img: /assets/bubbles-portal-resized.gif
+img: /assets/superNova.gif
 
 img_alt: Super-nova
 description: |
 
 tags:
     - Three js
-    - portal
-    - 3js
+    - super-nova
     - cyber effect
     - shaders
 ---
@@ -158,9 +157,14 @@ This lets you apply advanced effects like bloom without modifying the raw render
 Frontend developers and WebGL explorers looking to go beyond BoxGeometry and HDRI backgrounds. This project is an awesome introduction to writing shaders and building reactive, glowing 3D effects.
 
 
+### 📸 Demo / Preview
+
+👉 View the project on GitHub
+
+```git@github.com:natalia-kuchta/super-nova.git```
 
 
-
+![Super-Nova-Full.gif](/assets/Super-Nova-Full.gif)
 
 
 
