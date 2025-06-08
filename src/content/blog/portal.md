@@ -18,6 +18,7 @@ tags:
 
 Hey coder ninjas and pixel wizards! 👾 Today, we’re diving headfirst into the cybernetic wormhole of 3D graphics — building a wicked cool portal using THREE.js that sucks you into a neon-soaked cyberpunk universe. Ready your keyboards and summon your inner hacker because this tutorial’s gonna be a wild ride through shaders, animations, and some seriously glowing bubbles. Let’s get that code glowin’! 💥
 
+![portal-neon.png](../../assets/portal-neon.png)
 
 ### Step 1: Setting Up Your Dimensional Playground
 First off, we create the scene — aka our digital universe. No fog machines needed here, but the feeling is just as mysterious.
