@@ -20,6 +20,8 @@ isn’t just another pretty visual — it’s an exploding star driven by shader
 
 ## 🌠 Project Goal
 
+![super-nova-ai.png](../../assets/super-nova-ai.png)
+
 I wanted more than just a glowing sphere. My goals were:
 
 - Learn how **GLSL shaders** work in a real-world project.
@@ -161,7 +163,9 @@ Frontend developers and WebGL explorers looking to go beyond BoxGeometry and HDR
 
 👉 View the project on GitHub
 
-```git@github.com:natalia-kuchta/super-nova.git```
+```
+git@github.com:natalia-kuchta/super-nova.git
+```
 
 
 ![Super-Nova-Full.gif](/assets/Super-Nova-Full.gif)
