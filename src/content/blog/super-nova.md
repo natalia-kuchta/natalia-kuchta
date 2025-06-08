@@ -20,7 +20,6 @@ isn’t just another pretty visual — it’s an exploding star driven by shader
 
 ## 🌠 Project Goal
 
-![super-nova-ai.png](../../assets/super-nova-ai.png)
 
 I wanted more than just a glowing sphere. My goals were:
 
@@ -30,6 +29,8 @@ I wanted more than just a glowing sphere. My goals were:
 - Make it interactive: a user click triggers the "supernova" explosion.
 
 ---
+
+![super-nova-ai.png](../../assets/super-nova-ai.png)
 
 ## 🧪 Shaders: Where Math Meets Light
 
