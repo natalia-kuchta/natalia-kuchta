@@ -14,7 +14,9 @@ tags:
     - shaders
 ---
 
-# How to Build a Cyberpunk Portal in THREE.js — A Hacker’s Journey Into the Neon Abyss with Neon Bubbles
+# How to Build a Cyberpunk Portal in THREE.js
+
+## A Hacker’s Journey Into the Neon Abyss with Neon Bubbles
 
 Hey coder ninjas and pixel wizards! 👾 Today, we’re diving headfirst into the cybernetic wormhole of 3D graphics — building a wicked cool portal using THREE.js that sucks you into a neon-soaked cyberpunk universe. Ready your keyboards and summon your inner hacker because this tutorial’s gonna be a wild ride through shaders, animations, and some seriously glowing bubbles. Let’s get that code glowin’! 💥
 
